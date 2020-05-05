@@ -1,8 +1,8 @@
 # FileUtils
-######com.github.rillis.Files  
+*com.github.rillis.Files* 
   
   
-##Methods  
+**Methods**  
 ```java
 //Create file/folder (and parent folders) and doesn't exists. Returns file it self.
 create(File file) : File throws IOException
@@ -25,4 +25,4 @@ copy(File file, File destFile) : void throws IOException
 removeIllegalChars(String str) : String
 ```
 
-##Constants
+**Constants**

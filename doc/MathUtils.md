@@ -1,8 +1,8 @@
 # MathUtils
-######com.github.rillis.Math  
+*com.github.rillis.Math*   
   
   
-##Methods  
+**Methods**   
 ```java
 //Generate a integer >= min <= max
 randomBetween(int min, int max) : int
@@ -14,7 +14,7 @@ randomDouble(int places) : double
 round(double value, int places) : double
 ```
 
-##Constants
+**Constants**  
 ```java
 //PI value
 double pi = 3.141592653589793

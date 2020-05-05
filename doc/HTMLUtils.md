@@ -1,11 +1,11 @@
 # HTMLUtils
-######com.github.rillis.Internet  
+*com.github.rillis.Internet* 
   
   
-##Methods  
+**Methods**  
 ```java
 //Get HTML code from url
 getHTML(String url) : String
 ```
 
-##Constants
+**Constants**  
