@@ -23,6 +23,15 @@ copy(File file, File destFile) : void throws IOException
 
 //Remove any Illegal char for file creation (Windows) from a String
 removeIllegalChars(String str) : String
+
+//Write a string in a file
+write(File file, String str) : void throws IOException
+
+//Write a string in a file (append mode)
+writeAppend(File file, String str, boolean newLine) : void throws IOException
+
+//Reads a file to string
+read(File file) : String throws FileNotFoundException, IOException
 ```
 
 **Constants**

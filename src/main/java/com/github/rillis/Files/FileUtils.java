@@ -1,6 +1,11 @@
 package com.github.rillis.Files;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 
@@ -71,6 +76,44 @@ public class FileUtils {
 	    file.delete();
 	}
 	
+	
+	public static void write(File file, String str) throws IOException {
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(file, false));
+	    writer.write(str);
+	    writer.close();
+	}
+	
+	public static void writeAppend(File file, String str, boolean newLine) throws IOException {
+		BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+		if(newLine) {
+			if(file.length()>0) {
+				str="\n"+str;
+			}
+		}
+	    writer.append(str);
+	    writer.close();
+	}
+	
+	public static String read(File file) throws FileNotFoundException, IOException {
+		
+		BufferedReader br = new BufferedReader(new FileReader(file));
+
+		    String everything = "";
+		    String line = br.readLine();
+
+		    while (line != null) {
+		        if(!everything.equals("")) {
+		        	everything+="\n";
+		        }
+		        everything+=line;
+		        line = br.readLine();
+		    }
+		
+		    br.close();
+
+		
+		return everything;		
+	}
 	
 	public static String removeIllegalChars(String str) {
 		return str.replaceAll("[^a-zA-Z0-9\\.\\-#$%@&]", "_");
