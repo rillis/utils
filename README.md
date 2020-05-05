@@ -24,3 +24,6 @@ com.github.rillis.Internet
   
 com.github.rillis.Math  
 [MathUtils](https://github.com/rillis/utils/blob/master/doc/MathUtils.md)  
+  
+com.github.rillis.Windows  
+[CMD](https://github.com/rillis/utils/blob/master/doc/CMD.md)  
