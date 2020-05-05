@@ -19,6 +19,6 @@ round(double value, int places) : double
 //PI value
 double pi = 3.141592653589793
 
-//Coulomb constant
-double k = 9.10^9 (9e9)
+//Coulomb constant (9*10^9)
+double k = 9e9
 ```
