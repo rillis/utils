@@ -27,3 +27,4 @@ com.github.rillis.Math
   
 com.github.rillis.Windows  
 [CMD](https://github.com/rillis/utils/blob/master/doc/CMD.md)  
+[WinVars](https://github.com/rillis/utils/blob/master/doc/WinVars.md)
